@@ -3,3 +3,54 @@ body, *{
     padding: 0;
     font-family: 'Mulish', sans-serif;
 }
+
+
+
+
+/* header section start */
+.header{
+    padding-top: 50px;
+    margin: 0 120px;
+}
+
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo h3{
+    color: #131318;
+    font-size: 36px;
+    font-weight: 800;
+    padding-left: 12px;
+}
+
+.logo h3 .logo-name{
+    color: #FF5400;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 0 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #424247;
+    font-weight: 400;
+    font-size: 18px;
+}
+/* header section end */
