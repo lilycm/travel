@@ -177,7 +177,21 @@ select{
 
 
 
+/* destination section start */
+.destination-detail{
+    text-align: center;
+}
 
+.destination-detail p{
+    width: 75%;
+    margin: 0 auto;
+    line-height: 24px;
+}
+
+.destination-images{
+    margin-top: 45px;
+}
+/* destination section end */
 
 
 
