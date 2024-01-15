@@ -4,7 +4,16 @@ body, *{
     font-family: 'Mulish', sans-serif;
 }
 
-
+/* common shared style */
+.btn-primary button{
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    border: none;
+    padding: 0px 15px;
+    background: #FF5400;
+    color: #FFF;
+}
 
 
 /* header section start */
@@ -53,4 +62,100 @@ nav ul li a{
     font-weight: 400;
     font-size: 18px;
 }
+
+.header-banner{
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../Images/bg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    margin-top: 60px;
+    text-align: center;
+    border-radius: 16px;
+}
+
+.header-banner .header-banner-detail{
+    text-align: center;
+    color: #FFF;
+    padding-top: 100px;
+}
+
+.header-banner-detail h1{
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.header-banner .header-banner-detail p{
+    padding-top: 24px;
+    padding-bottom: 30px;
+    width: 70%;
+    margin: 0 auto;
+    line-height: 25px;
+}
+
+.header-banner .travel-form{
+    padding-bottom: 100px;
+}
+
+
+.header-banner .travel-form form{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 16px;
+    margin: 0px 110px;
+
+}
+
+.header-banner .travel-form form .form1 input{
+    width: 174px;
+    height: 52px;
+    border: none;
+    padding: 0px 10px;
+    border-radius: 8px;
+}
+
+select{
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    border: none;
+    padding: 0px 15px;
+}
 /* header section end */
+
+
+
+
+
+
+/* media query for small device start */
+
+@media screen and (max-width: 600px) {
+    .header nav{
+        display: none;
+    }
+    .header{
+        margin: 10px;
+    }
+    .header-banner{
+        background-position: center;
+    }
+
+    .header-banner .header-banner-detail h1{
+        font-size: 30px;
+    }
+
+    .header-banner .travel-form form{
+        flex-direction: column;
+        padding: 16px;
+        margin: 10px 24px;
+    }
+    .header-banner .header-banner-detail{
+        padding-top: 30px;
+    }
+    .header-banner .travel-form{
+        padding-bottom: 30px;
+    }
+}
