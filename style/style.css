@@ -147,12 +147,14 @@ select{
 .popular-tour{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 .tour-description{
     width: 45%;
 }
 .tour-description p{
     padding-bottom: 24px;
+    padding-top: 0px;
 }
 
 .tour-description ul{
@@ -169,6 +171,7 @@ select{
 
 .tour-img img{
     width: 100%;
+    object-fit: cover;
 }
 /* popular tour section end */
 
@@ -182,6 +185,9 @@ select{
 /* media query for small device start */
 
 @media screen and (max-width: 600px) {
+    main{
+        margin: 0 10px;
+    }
     .header nav{
         display: none;
     }
@@ -206,5 +212,16 @@ select{
     }
     .header-banner .travel-form{
         padding-bottom: 30px;
+    }
+
+    .popular-tour{
+        flex-direction: column;
+    }
+    .tour-description{
+        width: 100%;
+    }
+    .tour-img{
+        width: 100%;
+        margin-top: 20px;
     }
 }
