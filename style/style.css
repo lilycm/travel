@@ -82,6 +82,10 @@ nav ul li a{
     font-size: 18px;
 }
 
+nav input, label{
+    display: none;
+}
+
 .header-banner{
     background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../Images/bg1.png');
     background-repeat: no-repeat;
@@ -646,12 +650,52 @@ footer{
     main{
         margin: 0 10px;
     }
+    .header nav{
+        display: block;
+    }
+    nav input, label{
+        display: block;
+    }
+
+    .header nav ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: -100%;
+        transition: all .5s linear;
+        background: #424247;
+    }
+
+    .header nav ul li{
+        padding-bottom: 15px;
+    }
+    .header nav ul li a{
+        color: #FFF;
+    }
+
+    .checkbtn{
+        font-size: 33px;
+        float: right;
+        margin-left: 80px;
+        cursor: pointer;
+    }
+
+    #check{
+        display: none;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .logo h3{
+        font-size: 24px;
+    }
+
     .common-tilte{
         font-size: 25px;
     }
-    .header nav{
-        display: none;
-    }
+
     .header{
         margin: 10px;
     }
