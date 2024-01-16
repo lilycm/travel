@@ -301,9 +301,6 @@ select{
 /* tour-plan section end */
 
 
-
-
-
 /* why choose us section start */
 .why-choose-sec-title{
     text-align: center;
@@ -352,6 +349,95 @@ select{
     padding-bottom: 16px;
 }
 /* why choose us section end */
+
+/* deals and destinations section start */
+.first-discount1{
+    background: url('../Images/bg4.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: start;
+    padding: 50px 50px 50px 0px;
+    border-radius: 16px;
+}
+
+.deal-discount-title{
+    text-align: center;
+}
+
+.deal-discount-title p{
+    padding-bottom: 20px;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 24px;
+}
+
+.background-blur{
+    right: -40%;
+    bottom: 50%;
+    position: relative;
+    width: 50%;
+    height: 90%;
+    background: #ffffffa2;
+    z-index: 1;
+    backdrop-filter: blur(2.75px);
+    padding: 50px;
+    border-radius: 16px;
+}
+
+.discount-information{
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+}
+
+.discount-information p .fa-clock, .fa-users, .fa-location-dot{
+    color: #FF5400;
+}
+
+
+.discount-detail h4{
+    padding: 24px 0px 16px 0px;
+    font-size: 24px;
+}
+
+.discount-detail p{
+    padding-bottom: 16px;
+    line-height: 24px;
+}
+
+.discount-detail span{
+    color: #FF5400;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.discount-detail .book-btn{
+    margin-top: 24px;
+}
+
+.first-discount2{
+    background: url('../Images/bg5.png');
+    background-repeat: no-repeat;
+    padding: 50px 50px 50px 0px;
+    margin: 50px 0px;
+}
+
+.background-blur1{
+    left: 5%;
+    bottom: 50%;
+    position: relative;
+    width: 50%;
+    height: 90%;
+    background: #ffffffa2;
+    z-index: 1;
+    backdrop-filter: blur(2.75px);
+    padding: 50px;
+    border-radius: 16px;
+}
+/* deals and destinations section end */
+
 
 
 
@@ -635,6 +721,47 @@ footer{
     .options-1, .options-2, .options-3{
         width: 80%;
         margin: 10px auto;
+    }
+
+    .discount-information{
+        height: 100%;
+        z-index: 10;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .discount-information{
+        font-size: 15px;
+    }
+    .background-blur{
+        left: 7%;
+        right: 0%;
+        top: 50%;
+        position: relative;
+        width: 90%;
+        height: 100%;
+        background: #ffffffa2;
+        z-index: 1;
+        backdrop-filter: blur(2.75px);
+        padding: 20px;
+        border-radius: 16px;
+    }
+    .background-blur1{
+        left: 7%;
+        top: 50%;
+        position: relative;
+        width: 90%;
+        height: 100%;
+        background: #ffffffa2;
+        z-index: 1;
+        backdrop-filter: blur(2.75px);
+        padding: 20px;
+        border-radius: 16px;
+    }
+    .first-discount2, .first-discount1{
+        padding-bottom: 20px;
     }
     
     .news-latter-section{
