@@ -257,6 +257,53 @@ select{
 /* destination section end */
 
 
+/* tour-plan section start */
+.plan-detail{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.tour-plans{
+    background: url('../Images/bg3.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.plan{
+    margin: 0 10px;
+    background: #42424798;
+}
+
+.plan img{
+    width: 100%;
+}
+
+.plan-details{
+    padding:15px;
+    color: #FFF;
+}
+
+.plan-details p{
+    padding: 10px 0px;
+}
+
+.plan-details span{
+    font-size: 25px;
+    font-weight: 800;
+}
+/* tour-plan section end */
+
+
+
+
+
 /* why choose us section start */
 .why-choose-sec-title{
     text-align: center;
@@ -577,6 +624,10 @@ footer{
         left: 25%;
     }
 
+    .tour-plans{
+        grid-template-columns: 1fr;
+    }
+
     .choose-options{
         flex-direction: column;
         gap: 10px;
@@ -592,7 +643,6 @@ footer{
     .form-title{
         width: 90%;
     }
-
 
     .offer-detail h4{
         font-size: 20px;
