@@ -439,6 +439,42 @@ select{
 /* deals and destinations section end */
 
 
+/* video section start */
+
+.video-section{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+}
+.video-section .video-detail{
+    width: 48%;
+}
+
+.video-section .video-detail p{
+    line-height: 24px;
+}
+
+.video-section .video-detail ul{
+    padding: 20px 0px 20px 25px;
+}
+
+.video-section .video-detail ul li{
+    line-height: 24px;
+    padding-bottom: 20px;
+}
+.video-section .video{
+    border-radius: 16px;
+    width: 48%;
+}
+
+.video-section .video iframe{
+    border-radius: 16px;
+    width: 100%;
+}
+/* video section end */
+
+
 
 
 /* news-latter-section start */
@@ -735,6 +771,12 @@ footer{
     .discount-information{
         font-size: 15px;
     }
+    .first-discount2{
+        background: url('../Images/bg5.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 50px 0px;
+    }
     .background-blur{
         left: 7%;
         right: 0%;
@@ -763,12 +805,24 @@ footer{
     .first-discount2, .first-discount1{
         padding-bottom: 20px;
     }
+
+    .video-section{
+        flex-direction: column;
+    }
     
+    .video-section .video-detail{
+        width: 90%;
+    }
+
+    .video-section .video{
+        width: 95%;
+    }
     .news-latter-section{
         flex-direction: column;
     }
     .form-title{
         width: 90%;
+        margin: 0 auto;
     }
 
     .offer-detail h4{
